@@ -1,4 +1,5 @@
 loader:
+
 LoadImage(1,"player_ship.png")
 LoadImage(2,"laser.png")
 LoadImage(3,"enemy_ship.png")

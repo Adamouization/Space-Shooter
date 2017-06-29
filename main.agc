@@ -33,11 +33,14 @@ lazery as float		// lazer y position
 lazer_fired = 0		// flag
 enemyx as float		// enemy ship x position
 enemyy as float		// enemy ship y position
-enemy_direction = 4	// 
+enemy_direction = 4	// x-axis enemy direction (left or right)
+score = 0			// current game score
 
+// loading subroutines
 GoSub loader
 GoSub Load_sounds
 
+// main game loop
 do
     GoSub PlayerMove
 	GoSub PlayerShoots

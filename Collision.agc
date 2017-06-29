@@ -1,6 +1,7 @@
 Collision:
 
-if GetSpriteCollision(2,3) = 1	// if collision between player and enemy is true
+// if collision between laser and enemy is true
+if GetSpriteCollision(2,3) = 1	
 	PlaySound(explosion)
 	score = score + 10
 	enemyx = 100 : enemyy = -50
