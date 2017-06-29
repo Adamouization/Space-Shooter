@@ -36,9 +36,10 @@ enemyy as float		// enemy ship y position
 enemy_direction = 4	// x-axis enemy direction (left or right)
 score = 0			// current game score
 
-// loading subroutines
+// loading subroutines and setting up game
 GoSub loader
 GoSub Load_sounds
+MakeText(score)
 
 // main game loop
 do
@@ -46,5 +47,13 @@ do
 	GoSub PlayerShoots
 	GoSub EnemyMove
 	GoSub Collision
+	SetTextString(1, "SCORE: " + str(score))
     Sync()
 loop
+
+// On-screen score
+Function MakeText(s)
+	CreateText(1, "SCORE: " + str(s))
+	SetTextSize(1, 60)
+	SetTextPosition(1, 0, 0)
+EndFunction
