@@ -8,6 +8,7 @@
 #include "Loader.agc"
 #include "PlayerMove.agc"
 #include "PlayerShoots.agc"
+#include "EnemyMove.agc"
 #include "Sounds.agc"
 
 // window properties
@@ -28,14 +29,17 @@ playerx as float	// player x position
 playery as float	// player y position
 lazerx as float		// lazer x position
 lazery as float		// lazer y position
-lazer_fired = 0
+lazer_fired = 0		// flag
+enemyx as float		// enemy ship x position
+enemyy as float		// enemy ship y position
+enemy_direction = 4	// 
 
 GoSub loader
 GoSub Load_sounds
-GoSub Load_music
 
 do
     GoSub PlayerMove
 	GoSub PlayerShoots
+	GoSub EnemyMove
     Sync()
 loop

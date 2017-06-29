@@ -45,13 +45,15 @@ FILE_1=Loader.agc;-1
 FILE_2=PlayerMove.agc;-1
 FILE_3=PlayerShoots.agc;-1
 FILE_4=Sounds.agc;-1
+FILE_5=EnemyMove.agc;-1
 
 [files]
-FILE_NAME_0=0;main.agc;220;0
+FILE_NAME_0=0;main.agc;223;0
 FILE_NAME_1=0;Loader.agc;437;1
-FILE_NAME_2=0;PlayerMove.agc;378;2
-FILE_NAME_3=0;PlayerShoots.agc;344;3
-FILE_NAME_4=1;Sounds.agc;0;4
+FILE_NAME_2=0;PlayerMove.agc;241;2
+FILE_NAME_3=0;PlayerShoots.agc;126;3
+FILE_NAME_4=0;Sounds.agc;12;4
+FILE_NAME_5=1;EnemyMove.agc;0;5
 
 [project]
 description=
