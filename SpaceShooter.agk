@@ -41,6 +41,10 @@ output_path=
 
 [projectfiles]
 FILE_0=main.agc;-1
+FILE_1=Loader.agc;-1
+FILE_2=PlayerMove.agc;-1
 
 [files]
-FILE_NAME_0=1;main.agc;0;1
+FILE_NAME_0=0;main.agc;489;0
+FILE_NAME_1=0;Loader.agc;343;1
+FILE_NAME_2=1;PlayerMove.agc;0;2
