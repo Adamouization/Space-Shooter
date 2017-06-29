@@ -7,6 +7,8 @@
 // imports
 #include "Loader.agc"
 #include "PlayerMove.agc"
+#include "PlayerShoots.agc"
+#include "Sounds.agc"
 
 // window properties
 SetWindowTitle("Space Shooter")
@@ -22,13 +24,18 @@ SetScissor(0,0,0,0) 			// use the maximum available screen space, no black borde
 UseNewDefaultFonts(1)			// since version 2.0.22 we can use nicer default fonts
 
 // variables
-playerx as float	// player position
-playery as float	// player position
+playerx as float	// player x position
+playery as float	// player y position
+lazerx as float		// lazer x position
+lazery as float		// lazer y position
+lazer_fired = 0
 
 GoSub loader
+GoSub Load_sounds
+GoSub Load_music
 
 do
     GoSub PlayerMove
-
+	GoSub PlayerShoots
     Sync()
 loop

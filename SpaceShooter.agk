@@ -43,8 +43,15 @@ output_path=
 FILE_0=main.agc;-1
 FILE_1=Loader.agc;-1
 FILE_2=PlayerMove.agc;-1
+FILE_3=PlayerShoots.agc;-1
+FILE_4=Sounds.agc;-1
 
 [files]
-FILE_NAME_0=0;main.agc;489;0
-FILE_NAME_1=0;Loader.agc;343;1
-FILE_NAME_2=1;PlayerMove.agc;0;2
+FILE_NAME_0=0;main.agc;220;0
+FILE_NAME_1=0;Loader.agc;437;1
+FILE_NAME_2=0;PlayerMove.agc;378;2
+FILE_NAME_3=0;PlayerShoots.agc;344;3
+FILE_NAME_4=1;Sounds.agc;0;4
+
+[project]
+description=
