@@ -9,6 +9,7 @@
 #include "PlayerMove.agc"
 #include "PlayerShoots.agc"
 #include "EnemyMove.agc"
+#include "Collision.agc"
 #include "Sounds.agc"
 
 // window properties
@@ -41,5 +42,6 @@ do
     GoSub PlayerMove
 	GoSub PlayerShoots
 	GoSub EnemyMove
+	GoSub Collision
     Sync()
 loop
