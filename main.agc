@@ -11,6 +11,7 @@
 #include "EnemyMove.agc"
 #include "Collision.agc"
 #include "Sounds.agc"
+#include "Background.agc"
 
 // window properties
 SetWindowTitle("Space Shooter")
@@ -39,6 +40,8 @@ score = 0			// current game score
 // loading subroutines and setting up game
 GoSub loader
 GoSub Load_sounds
+//GoSub Load_music
+GoSub Make_stars
 MakeText(score)
 
 // main game loop
@@ -47,6 +50,7 @@ do
 	GoSub PlayerShoots
 	GoSub EnemyMove
 	GoSub Collision
+	GoSub Move_stars
 	SetTextString(1, "SCORE: " + str(score))
     Sync()
 loop

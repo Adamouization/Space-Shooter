@@ -12,7 +12,7 @@ SetSpritePosition(1, playerx, playery)
 
 // Create lazer shot and place it off screen for now
 CreateSprite(2,2)
-SetSpritePosition(2,-200,-200)
+SetSpritePosition(2,-2000,-2000)
 
 // Create enemy ship and place it at top of screen
 CreateSprite(3,3)

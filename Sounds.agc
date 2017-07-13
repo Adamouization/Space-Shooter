@@ -6,6 +6,6 @@ Return
 
 Load_music:
 
-music = LoadMusicOGG("space_music.mp3")
+music = LoadMusicOGG("space_music.ogg")
 PlayMusicOGG(music)
 Return
