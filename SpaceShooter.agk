@@ -49,17 +49,19 @@ FILE_5=EnemyMove.agc;-1
 FILE_6=Collision.agc;-1
 FILE_7=Background.agc;-1
 FILE_8=Background.agc;-1
+FILE_9=Menu.agc;-1
 
 [files]
-FILE_NAME_0=0;main.agc;356;0
-FILE_NAME_1=0;Loader.agc;580;1
+FILE_NAME_0=0;main.agc;344;0
+FILE_NAME_1=0;Loader.agc;463;1
 FILE_NAME_2=0;PlayerMove.agc;337;2
 FILE_NAME_3=0;PlayerShoots.agc;126;3
-FILE_NAME_4=0;Sounds.agc;111;4
-FILE_NAME_5=0;EnemyMove.agc;369;5
-FILE_NAME_6=0;Collision.agc;235;6
-FILE_NAME_7=1;Background.agc;0;7
-FILE_NAME_8=1;Background.agc;0;7
+FILE_NAME_4=0;Sounds.agc;86;4
+FILE_NAME_5=0;EnemyMove.agc;34;5
+FILE_NAME_6=0;Collision.agc;366;6
+FILE_NAME_7=0;Background.agc;388;7
+FILE_NAME_8=0;Background.agc;388;7
+FILE_NAME_9=1;Menu.agc;384;8
 
 [project]
 description=

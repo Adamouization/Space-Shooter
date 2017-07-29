@@ -1,6 +1,6 @@
 EnemyMove:
 
-enemyy = enemyy + 1		//move enemy down the screen
+enemyy = enemyy + 3		//move enemy down the screen
 
 // When enemy reaches right edge of screen, make it move left
 if enemy_direction = 4 and enemyx > GetVirtualWidth() - GetSpriteWidth(3)
