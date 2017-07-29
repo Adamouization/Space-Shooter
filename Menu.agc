@@ -4,7 +4,7 @@ CreateText(3,"Space Shooter")
 SetTextSize(3,100)
 SetTextPosition(3, (768 - GetTextTotalWidth(3))/2 , 180)
 
-CreateText(4, "High Score")
+CreateText(4, "HIGH SCORE")
 SetTextSize(4, 60)
 SetTextPosition(4, 768 - GetTextTotalWidth(4) , 0)
 

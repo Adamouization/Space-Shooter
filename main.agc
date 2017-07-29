@@ -36,10 +36,11 @@ lazer_fired = 0			// flag
 enemyx as float			// enemy ship x position
 enemyy as float			// enemy ship y position
 enemy_direction = 4		// x-axis enemy direction (left or right)
+
 score = 0				// current game score
 highscore = 0			// all-time local high score
+
 gameover = 1			// game status boolean
-//MenuCreateOnce = 0
 
 // loading subroutines and setting up game
 GoSub Make_stars
@@ -59,16 +60,16 @@ do
     GoSub PlayerMove
 	GoSub PlayerShoots
 	GoSub EnemyMove
+	GoSub PlayerDeath
 	
 	GoSub Move_stars
-
-	GoSub PlayerDeath
 
 	SetTextString(1, "SCORE: " + str(score))
 	if score > highscore
 		highscore = score
 	endif
-	SetTextString(2, "HIGHSCORE: " + str(highscore))
+	SetTextString(4, "HIGHSCORE: " + str(highscore))
+	SetTextPosition(4, 768 - GetTextTotalWidth(4) , 0)
 	
 	GoSub Collision
     Sync()
@@ -80,8 +81,4 @@ Function MakeText(s)
 	CreateText(1, "SCORE: " + str(s))
 	SetTextSize(1, 60)
 	SetTextPosition(1, 0, 0)
-	
-	//CreateText(2, "HIGHSCORE: " + str(S))
-	//SetTextSize(2, 60)
-	//SetTextPosition(1, 500, 0)
 EndFunction
