@@ -41,6 +41,7 @@ score = 0				// current game score
 highscore = 0			// all-time local high score
 
 gameover = 1			// game status boolean
+menu_created = 0		// game menu created once
 
 // loading subroutines and setting up game
 GoSub Make_stars

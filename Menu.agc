@@ -1,16 +1,20 @@
 MainMenu:
 
-CreateText(3,"Space Shooter")
-SetTextSize(3,100)
-SetTextPosition(3, (768 - GetTextTotalWidth(3))/2 , 180)
+if menu_created = 0
+	CreateText(3,"Space Shooter")
+	SetTextSize(3,100)
+	SetTextPosition(3, (768 - GetTextTotalWidth(3))/2 , 180)
 
-CreateText(4, "HIGHSCORE: " + str(highscore))
-SetTextSize(4, 60)
-SetTextPosition(4, 768 - GetTextTotalWidth(4) , 0)
+	CreateText(4, "HIGHSCORE: " + str(highscore))
+	SetTextSize(4, 60)
+	SetTextPosition(4, 768 - GetTextTotalWidth(4) , 0)
 
-CreateText(5, "Fire to start game")
-SetTextSize(5, 60)
-SetTextPosition(5, (768 - GetTextTotalWidth(5))/2 , 900)
+	CreateText(5, "Fire to start game")
+	SetTextSize(5, 60)
+	SetTextPosition(5, (768 - GetTextTotalWidth(5))/2 , 900)
+	
+	menu_created = 1
+endif
 
 // Activate menu
 GoSub HideGameSprites
