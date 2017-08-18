@@ -2,3 +2,5 @@
 SpaceShooter.exe
 media/bytecode.byc
 steam_api64.dll
+steam_api.dll
+steam_appid.txt

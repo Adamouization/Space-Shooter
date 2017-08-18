@@ -51,15 +51,15 @@ FILE_7=Background.agc;-1
 FILE_8=Menu.agc;-1
 
 [files]
-FILE_NAME_0=1;main.agc;1554;0
-FILE_NAME_1=0;Loader.agc;98;1
-FILE_NAME_2=0;PlayerMove.agc;179;2
+FILE_NAME_0=0;main.agc;73;0
+FILE_NAME_1=0;Loader.agc;501;1
+FILE_NAME_2=0;PlayerMove.agc;380;2
 FILE_NAME_3=0;PlayerShoots.agc;126;3
 FILE_NAME_4=0;Sounds.agc;86;4
-FILE_NAME_5=0;EnemyMove.agc;233;5
-FILE_NAME_6=0;Collision.agc;366;6
-FILE_NAME_7=0;Background.agc;340;7
-FILE_NAME_8=0;Menu.agc;579;8
+FILE_NAME_5=0;EnemyMove.agc;412;5
+FILE_NAME_6=0;Collision.agc;214;6
+FILE_NAME_7=0;Background.agc;348;7
+FILE_NAME_8=1;Menu.agc;640;8
 
 [project]
 description=
