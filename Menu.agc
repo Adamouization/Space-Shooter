@@ -1,3 +1,10 @@
+/* 
+Contains code for creating the main menu screen:
+	- create game title
+	- create highscore text holder
+	- create game launch instruction
+	- contains submodules for game views navigation logic
+*/
 MainMenu:
 
 if menu_created = 0

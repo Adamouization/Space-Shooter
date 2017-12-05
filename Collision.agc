@@ -1,3 +1,6 @@
+/* 
+Contains code for detecting collisions between enemies and lazer shots
+*/
 Collision:
 // if collision between laser and enemy is true
 if GetSpriteCollision(2,3) = 1	
@@ -9,6 +12,10 @@ if GetSpriteCollision(2,3) = 1
 endif
 Return
 
+
+/* 
+Contains code for detecting collisions between enemies and the player (= player death)
+*/
 PlayerDeath:
 // if collision between enemy ship and player ship
 if GetSpriteCollision(3,1) = 1

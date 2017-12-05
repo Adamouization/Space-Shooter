@@ -1,3 +1,8 @@
+/* 
+Contains code for player movement, including:
+	- moving left and right
+	- preventing player from falling off the left and right screen edges
+*/
 PlayerMove:
 
 playerx = playerx + GetDirectionX()*12

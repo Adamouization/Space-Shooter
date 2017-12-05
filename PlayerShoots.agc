@@ -1,3 +1,9 @@
+/* 
+Contains code for player lazer shooting, including:
+	- detecting mouse click to shoot the lazer from the tip of the player sprite
+	- lazer movement upwards
+	- lazer hiding when it moves off the screen
+*/
 PlayerShoots:
 
 // Check if player has fired

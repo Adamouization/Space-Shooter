@@ -1,3 +1,8 @@
+/* 
+Contains code for creating the game sprites, including:
+	- loading images
+	- assigning them to a sprite
+*/
 loader:
 
 LoadImage(1,"player_ship.png")

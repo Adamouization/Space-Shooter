@@ -1,8 +1,9 @@
-
-// Project: SpaceShooter 
-// Created: 2017-06-29
-// Author: Adam Jaamour
-// email: adam@jaamour.com
+/*
+Project: SpaceShooter 
+Created: 2017-06-29
+Author: Adam Jaamour
+email: adam@jaamour.com
+*/
 
 // imports
 #include "Loader.agc"
