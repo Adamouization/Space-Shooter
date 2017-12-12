@@ -6,12 +6,10 @@ Contains code for enemy movement, including:
 
 EnemyMove:
 
-//enemyy = enemyy + 3		//move enemy down the screen
-enemyy = enemyy + 10		//move enemy down the screen
-
+enemyy = enemyy + 3		//move enemy down the screen
 
 enemyx = enemyx
 
-SetSpritePosition(3, enemyx, enemyy)
+SetSpritePosition(103, enemyx, enemyy)
 
 Return

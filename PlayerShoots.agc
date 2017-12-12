@@ -10,8 +10,8 @@ PlayerShoots:
 if GetPointerPressed()=1 and lazer_fired=0
 	playsound(lazer)
 	lazer_fired = 1
-	lazerx = GetSpriteX(1) + GetSpriteWidth(1)/2 - GetSpriteWidth(2)/2	// position laser in middle of ship
-	lazery = GetSpriteY(1) - 40
+	lazerx = GetSpriteX(101) + GetSpriteWidth(101)/2 - GetSpriteWidth(102)/2	// position laser in middle of ship
+	lazery = GetSpriteY(101) - 40
 endif
 
 // If laser has been shot, move it up the screen
@@ -20,10 +20,10 @@ if lazer_fired = 1
 endif
 
 // If lazer has moved off the screen, hide it
-if lazery <- GetSpriteHeight(2)
+if lazery <- GetSpriteHeight(102)
 	lazer_fired = 0
 endif
 
-SetSpritePosition(2, lazerx, lazery)
+SetSpritePosition(102, lazerx, lazery)
 
 Return

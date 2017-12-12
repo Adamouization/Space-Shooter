@@ -10,17 +10,17 @@ LoadImage(2,"lazer.png")
 LoadImage(3,"enemy_ship.png")
 
 // Create player ship and place it at bottom of screen
-CreateSprite(1,1)
-playerx = GetVirtualWidth()/2 - GetSpriteWidth(1)/2 	// middle of screen
-playery = GetVirtualHeight() - GetSpriteHeight(1)		// bottom of screen
-SetSpritePosition(1, playerx, playery)
+CreateSprite(101,1)
+playerx = GetVirtualWidth()/2 - GetSpriteWidth(101)/2 	// middle of screen
+playery = GetVirtualHeight() - GetSpriteHeight(101)		// bottom of screen
+SetSpritePosition(101, playerx, playery)
 
 // Create lazer shot and place it off screen for now
-CreateSprite(2,2)
-SetSpritePosition(2,-100,-100)
+CreateSprite(102,2)
+SetSpritePosition(102,-100,-100)
 
 // Create enemy ship and place it at top of screen
-CreateSprite(3,3)
-SetSpritePosition(3,100,20)
+CreateSprite(103,3)
+SetSpritePosition(103,100,20)
 
 Return

@@ -13,10 +13,10 @@ if playerx < 0
 endif
 
 // check that player ship doesn't fall off right screen edge
-if playerx > GetVirtualWidth() - GetSpriteWidth(1)
-	playerx = GetVirtualWidth() - GetSpriteWidth(1)
+if playerx > GetVirtualWidth() - GetSpriteWidth(101)
+	playerx = GetVirtualWidth() - GetSpriteWidth(101)
 endif
 
-SetSpritePosition(1, playerx, playery)
+SetSpritePosition(101, playerx, playery)
 
 Return
