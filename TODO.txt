@@ -1,3 +1,17 @@
-_ add multiple enemies that move downwards and don't move horizontally
-_ switch sprite numbering (first 100 are stars, rest are enemy/player/lazer)
+__TODO__:
+
+IMPORTANT FEATURES:
+_ add new (3 or 4 total) enemies that move downwards only, with collision logic applying to all of them
+
+CODE DESIGN FEATURES:
+_ create player, lazer and enemy objects (OO style))
+
+
+_____________________________________________________________________________________
+DONE:
+
+IMPORTANT FEATURES:
 _ if enemy touches bottom of screen, game over
+
+CODE DESIGN FEATURES:
+_ switch sprite numbering (first 100 are stars, rest are enemy/player/lazer)
