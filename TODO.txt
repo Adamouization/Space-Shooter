@@ -3,6 +3,7 @@ __TODO__:
 IMPORTANT FEATURES:
 _ center the 3 enemies
 _ assign a hard coded equation to each enemy, with the equation displayed under/above the ship
+_ save highscore to text file
 
 CODE DESIGN FEATURES:
 _ create player, lazer and enemy objects (OO style))
