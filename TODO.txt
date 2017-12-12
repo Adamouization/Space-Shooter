@@ -1,2 +1,3 @@
 _ add multiple enemies that move downwards and don't move horizontally
 _ switch sprite numbering (first 100 are stars, rest are enemy/player/lazer)
+_ if enemy touches bottom of screen, game over
