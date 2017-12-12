@@ -32,6 +32,11 @@ repeat
 	sync()
 until GetPointerPressed() = 1
 
+// reset the enemy ships position to top of screens before restart
+for j=103 to 105
+	setSpriteY(j, -50)
+next j
+
 gameover = 0	// game running
 
 // Hide menu and show game sprites
@@ -44,13 +49,13 @@ Return
 
 
 HideGameSprites:
-for i=1 to 103
+for i=1 to 105
 	SetSpriteVisible(i,0)
 next i
 Return
 
 ShowGameSprites:
-for i=1 to 103
+for i=1 to 105
 	SetSpriteVisible(i,1)
 next i
 Return

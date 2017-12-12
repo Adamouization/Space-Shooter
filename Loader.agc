@@ -19,8 +19,12 @@ SetSpritePosition(101, playerx, playery)
 CreateSprite(102,2)
 SetSpritePosition(102,-100,-100)
 
-// Create enemy ship and place it at top of screen
+// Create 3 enemy ships and place them at the top of the screen
 CreateSprite(103,3)
 SetSpritePosition(103,100,20)
+CreateSprite(104,3)
+SetSpritePosition(104,300,20)
+CreateSprite(105,3)
+SetSpritePosition(105,500,20)
 
 Return

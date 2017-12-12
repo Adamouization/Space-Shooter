@@ -1,10 +1,12 @@
 __TODO__:
 
 IMPORTANT FEATURES:
-_ add new (3 or 4 total) enemies that move downwards only, with collision logic applying to all of them
+_ center the 3 enemies
+_ assign a hard coded equation to each enemy, with the equation displayed under/above the ship
 
 CODE DESIGN FEATURES:
 _ create player, lazer and enemy objects (OO style))
+_ assess if really need player/lazer/enemy x and y positions (use getpritex or getspritey instead)
 
 
 _____________________________________________________________________________________
@@ -12,6 +14,8 @@ DONE:
 
 IMPORTANT FEATURES:
 _ if enemy touches bottom of screen, game over
+_ add new enemies (3 total) that move downwards only, with collision logic applying to all of them
+_ when game restarts, make all enemies start from top (reset y positions)
 
 CODE DESIGN FEATURES:
 _ switch sprite numbering (first 100 are stars, rest are enemy/player/lazer)

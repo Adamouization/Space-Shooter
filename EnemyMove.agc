@@ -6,10 +6,8 @@ Contains code for enemy movement, including:
 
 EnemyMove:
 
-enemyy = enemyy + 3		//move enemy down the screen
-
-enemyx = enemyx
-
-SetSpritePosition(103, enemyx, enemyy)
+for i=103 to 105
+	SetSpritePosition(i, GetSpriteX(i), GetSpriteY(i) + 3)
+next i
 
 Return
