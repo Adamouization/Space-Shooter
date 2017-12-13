@@ -20,3 +20,6 @@ _ when game restarts, make all enemies start from top (reset y positions)
 
 CODE DESIGN FEATURES:
 _ switch sprite numbering (first 100 are stars, rest are enemy/player/lazer)
+
+SMALL FEATURES:
+_ add button to stop playing

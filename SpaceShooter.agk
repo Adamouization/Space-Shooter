@@ -33,6 +33,7 @@ splash_960_path=
 uses_ads=0
 version_number=
 firebase_config_path=
+splash_2436_path=
 
 [html5_settings]
 commands_used=0
@@ -52,16 +53,16 @@ FILE_8=Menu.agc;-1
 FILE_9=TODO.txt;-1
 
 [files]
-FILE_NAME_0=1;main.agc;71;0
-FILE_NAME_1=0;Loader.agc;0;1
-FILE_NAME_2=0;PlayerMove.agc;151;2
-FILE_NAME_3=0;PlayerShoots.agc;0;3
-FILE_NAME_4=0;Sounds.agc;253;4
-FILE_NAME_5=0;EnemyMove.agc;0;5
-FILE_NAME_6=0;Collision.agc;403;6
-FILE_NAME_7=0;Background.agc;0;7
-FILE_NAME_8=0;Menu.agc;197;8
-FILE_NAME_9=0;TODO.txt;150;9
+FILE_NAME_0=0;main.agc;1098;0
+FILE_NAME_1=0;Loader.agc;342;1
+FILE_NAME_2=0;PlayerMove.agc;166;2
+FILE_NAME_3=0;PlayerShoots.agc;693;3
+FILE_NAME_4=0;Sounds.agc;249;4
+FILE_NAME_5=0;EnemyMove.agc;189;5
+FILE_NAME_6=0;Collision.agc;651;6
+FILE_NAME_7=0;Background.agc;572;7
+FILE_NAME_8=0;Menu.agc;778;8
+FILE_NAME_9=1;TODO.txt;366;9
 
 [project]
 description=

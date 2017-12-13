@@ -71,6 +71,11 @@ do
 	SetTextPosition(4, 768 - GetTextTotalWidth(4) , 0)
 	
 	GoSub Collision
+	
+	if GetRawKeyPressed(80) // 'P' key pressed
+		gameover = 1
+	endif
+	
     Sync()
 loop
 
