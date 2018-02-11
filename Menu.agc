@@ -23,23 +23,23 @@ if menu_created = 0
 	menu_created = 1
 endif
 
-// Activate menu
+/* Activate menu */
 GoSub HideGameSprites
 GoSub ShowMenuText
 
-// Wait for player to start the game
+/* Wait for player to start the game */
 repeat
 	sync()
 until GetPointerPressed() = 1
 
-// reset the enemy ships position to top of screens before restart
+/* Reset the enemy ships position to top of screens before restart */
 for j=103 to 105
 	setSpriteY(j, -50)
 next j
 
 gameover = 0	// game running
 
-// Hide menu and show game sprites
+/* Hide menu and show game sprites */
 GoSub ShowGameSprites
 GoSub HideMenuText
 
@@ -47,24 +47,43 @@ Return
 
 
 
-
+/* 
+Contains code for hiding the game sprites:
+	- hides enemy ships
+	- hides player ship
+	- hides lazer shot
+	- hides stars
+*/
 HideGameSprites:
 for i=1 to 105
 	SetSpriteVisible(i,0)
 next i
 Return
 
+/* 
+Contains code for showing the game sprites:
+	- shows enemy ships
+	- shows player ship
+	- shows lazer shot
+	- shows stars
+*/
 ShowGameSprites:
 for i=1 to 105
 	SetSpriteVisible(i,1)
 next i
 Return
 
+/*
+Contains code for hiding the main menu texts
+*/
 HideMenuText:
 SetTextVisible(3,0)
 SetTextVisible(5,0)
 Return
 
+/* 
+Contains code for shozing the main menu texts
+*/
 ShowMenuText:
 SetTextVisible(3,1)
 SetTextVisible(5,1)

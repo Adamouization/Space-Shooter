@@ -6,7 +6,7 @@ Contains code for player lazer shooting, including:
 */
 PlayerShoots:
 
-// Check if player has fired
+/* Check if player has fired */
 if GetPointerPressed()=1 and lazer.fired=0
 	playsound(lazer_sound)
 	lazer.fired = 1
@@ -14,16 +14,17 @@ if GetPointerPressed()=1 and lazer.fired=0
 	lazer.y = GetSpriteY(101) - 40
 endif
 
-// If laser has been shot, move it up the screen
+/* If laser has been shot, move it up the screen */
 if lazer.fired = 1
 	lazer.y = lazer.y - 12
 endif
 
-// If lazer has moved off the screen, hide it
+/* If lazer has moved off the screen, hide it */
 if lazer.y <- GetSpriteHeight(102)
 	lazer.fired = 0
 endif
 
+/* Update the lazer's position on the screen */
 SetSpritePosition(102, lazer.x, lazer.y)
 
 Return

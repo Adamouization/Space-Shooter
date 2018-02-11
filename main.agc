@@ -7,7 +7,7 @@ Author: Adam Jaamour
 email: adam@jaamour.com
 */
 
-// imports
+/* imports */
 #include "Loader.agc"
 #include "PlayerMove.agc"
 #include "PlayerShoots.agc"
@@ -17,20 +17,20 @@ email: adam@jaamour.com
 #include "Background.agc"
 #include "Menu.agc"
 
-// window properties
+/* window properties */
  SetWindowTitle("Space Shooter")
  SetWindowSize(768,1024,0)
  SetWindowAllowResize(0) 			// disallow user to resize the window
  SetErrorMode(2)					// show all errors
 
-// set display properties
+/* set display properties */
 SetVirtualResolution(768,1024) 		// portrait size, doesn't have to match the window
 SetOrientationAllowed(1,1,1,1) 		// allow both portrait and landscape on mobile devices
 SetSyncRate(60,0) 
 SetScissor(0,0,0,0) 				// use the maximum available screen space, no black borders
 UseNewDefaultFonts(1)				// since version 2.0.22 we can use nicer default fonts
 
-// variables
+/* types */
 Type _Player
 	x as float			// player x position
 	y as float			// player y position	
@@ -42,21 +42,22 @@ Type _Lazer
 	fired as integer	// flag
 EndType
 
+/* variables */
 score = 0				// current game score
 highscore = 0			// all-time local high score
 
 gameover = 1			// game status boolean
 menu_created = 0		// game menu created once
 
-// loading subroutines and setting up game
+/* loading subroutines and setting up game */
 GoSub Make_stars
-GoSub loader
+GoSub Loader
 MakeText(score)
 GoSub Load_sounds
 //GoSub Load_music
 
 
-// main game loop
+/* main game loop */
 do
 	if gameover = 1
 		GoSub MainMenu
@@ -87,7 +88,7 @@ do
 loop
 
 
-// On-screen score
+/* On-screen score */
 Function MakeText(s)
 	CreateText(1, "SCORE: " + str(s))
 	SetTextSize(1, 60)
