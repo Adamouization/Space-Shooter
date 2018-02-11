@@ -1,6 +1,8 @@
 /*
 Project: SpaceShooter 
 Created: 2017-06-29
+Last updated: 2018-02-11
+Version: 0.0.0
 Author: Adam Jaamour
 email: adam@jaamour.com
 */
@@ -18,22 +20,27 @@ email: adam@jaamour.com
 // window properties
  SetWindowTitle("Space Shooter")
  SetWindowSize(768,1024,0)
- SetWindowAllowResize(0) 	// disallow user to resize the window
- SetErrorMode(2)			// show all errors
+ SetWindowAllowResize(0) 			// disallow user to resize the window
+ SetErrorMode(2)					// show all errors
 
 // set display properties
 SetVirtualResolution(768,1024) 		// portrait size, doesn't have to match the window
-SetOrientationAllowed(1,1,1,1) 	// allow both portrait and landscape on mobile devices
+SetOrientationAllowed(1,1,1,1) 		// allow both portrait and landscape on mobile devices
 SetSyncRate(60,0) 
 SetScissor(0,0,0,0) 				// use the maximum available screen space, no black borders
 UseNewDefaultFonts(1)				// since version 2.0.22 we can use nicer default fonts
 
 // variables
-playerx as float		// player x position
-playery as float		// player y position
-lazerx as float = -100	// lazer x position
-lazery as float			// lazer y position
-lazer_fired = 0			// flag
+Type _Player
+	x as float			// player x position
+	y as float			// player y position	
+EndType
+
+Type _Lazer	
+	x as float			// lazer x position
+	y as float			// lazer y position
+	fired as integer	// flag
+EndType
 
 score = 0				// current game score
 highscore = 0			// all-time local high score

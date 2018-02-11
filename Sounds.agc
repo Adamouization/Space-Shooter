@@ -5,8 +5,8 @@ Contains code for loading the game sounds the game sprites, including:
 */
 Load_sounds:
 
-explosion = LoadSound("explosion.wav")
-lazer = LoadSound("laser.wav")
+explosion_sound = LoadSound("explosion.wav")
+lazer_sound = LoadSound("laser.wav")
 Return
 
 

@@ -6,9 +6,7 @@ _ assign a hard coded equation to each enemy, with the equation displayed under/
 _ save highscore to text file
 
 CODE DESIGN FEATURES:
-_ create player, lazer and enemy objects (OO style))
 _ assess if really need player/lazer/enemy x and y positions (use getpritex or getspritey instead)
-
 
 _____________________________________________________________________________________
 DONE:
@@ -20,6 +18,7 @@ _ when game restarts, make all enemies start from top (reset y positions)
 
 CODE DESIGN FEATURES:
 _ switch sprite numbering (first 100 are stars, rest are enemy/player/lazer)
+_ create player, lazer and enemy objects (OO style))
 
 SMALL FEATURES:
 _ add button to stop playing

@@ -5,18 +5,18 @@ Contains code for player movement, including:
 */
 PlayerMove:
 
-playerx = playerx + GetDirectionX()*12
+player.x = player.x + GetDirectionX()*12
 
 // check that player ship doesn't fall off left screen edge
-if playerx < 0
-	playerx = 0
+if player.x < 0
+	player.x = 0
 endif
 
 // check that player ship doesn't fall off right screen edge
-if playerx > GetVirtualWidth() - GetSpriteWidth(101)
-	playerx = GetVirtualWidth() - GetSpriteWidth(101)
+if player.x > GetVirtualWidth() - GetSpriteWidth(101)
+	player.x = GetVirtualWidth() - GetSpriteWidth(101)
 endif
 
-SetSpritePosition(101, playerx, playery)
+SetSpritePosition(101, player.x, player.y)
 
 Return
