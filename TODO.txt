@@ -1,7 +1,6 @@
 __TODO__:
 
 IMPORTANT FEATURES:
-_ center the 3 enemies
 _ assign a hard coded equation to each enemy, with the equation displayed under/above the ship
 _ save highscore to text file
 
@@ -15,6 +14,7 @@ IMPORTANT FEATURES:
 _ if enemy touches bottom of screen, game over
 _ add new enemies (3 total) that move downwards only, with collision logic applying to all of them
 _ when game restarts, make all enemies start from top (reset y positions)
+_ center the 3 enemies
 
 CODE DESIGN FEATURES:
 _ switch sprite numbering (first 100 are stars, rest are enemy/player/lazer)

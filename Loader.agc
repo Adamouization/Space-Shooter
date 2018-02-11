@@ -12,7 +12,7 @@ LoadImage(3,"enemy_ship.png")
 // Create player ship and place it at bottom of screen
 player as _Player
 CreateSprite(101,1)
-player.x = GetVirtualWidth()/2 - GetSpriteWidth(101)/2 	// middle of screen
+player.x = GetVirtualWidth()/2 - GetSpriteWidth(101)/2 		// middle of screen
 player.y = GetVirtualHeight() - GetSpriteHeight(101)		// bottom of screen
 SetSpritePosition(101, player.x, player.y)
 
@@ -24,11 +24,20 @@ CreateSprite(102,2)
 SetSpritePosition(102,-100,-100)
 
 // Create 3 enemy ships and place them at the top of the screen
+
+enemy_y = 20
+distance_between_enemies = ((GetVirtualWidth() - (GetImageWidth(3) * 3)) / 3) + 100
+
+// middle sprite
 CreateSprite(103,3)
-SetSpritePosition(103,100,20)
+SetSpritePosition(103, GetVirtualWidth()/2 - GetSpriteWidth(103)/2, enemy_y)
+
+// left sprite
 CreateSprite(104,3)
-SetSpritePosition(104,300,20)
+SetSpritePosition(104, GetSpriteX(103) - distance_between_enemies, enemy_y)
+
+// right sprite
 CreateSprite(105,3)
-SetSpritePosition(105,500,20)
+SetSpritePosition(105, GetSpriteX(103) + distance_between_enemies, enemy_y)
 
 Return
