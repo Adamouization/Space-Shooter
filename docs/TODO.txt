@@ -1,24 +1,23 @@
-__TODO__:
+# Space Shooter Todo
 
-IMPORTANT FEATURES:
-_ assign a hard coded equation to each enemy, with the equation displayed under/above the ship
-_ save highscore to text file
+#### Important Features
+* assign a hard coded equation to each enemy, with the equation displayed under/above the ship
+* save highscore to text file
 
-CODE DESIGN FEATURES:
-_ assess if really need player/lazer/enemy x and y positions (use getpritex or getspritey instead)
+#### Code Design
+* assess if really need player/lazer/enemy x and y positions (use getpritex or getspritey instead)
 
-_____________________________________________________________________________________
-DONE:
+## Done:
 
-IMPORTANT FEATURES:
-_ if enemy touches bottom of screen, game over
-_ add new enemies (3 total) that move downwards only, with collision logic applying to all of them
-_ when game restarts, make all enemies start from top (reset y positions)
-_ center the 3 enemies
+#### Important Features
+* if enemy touches bottom of screen, game over
+* add new enemies (3 total) that move downwards only, with collision logic applying to all of them
+* when game restarts, make all enemies start from top (reset y positions)
+* center the 3 enemies
 
-CODE DESIGN FEATURES:
-_ switch sprite numbering (first 100 are stars, rest are enemy/player/lazer)
-_ create player, lazer and enemy objects (OO style))
+#### Code Design
+* switch sprite numbering (first 100 are stars, rest are enemy/player/lazer)
+* create player, lazer and enemy objects (OO style))
 
-SMALL FEATURES:
-_ add button to stop playing
+#### Minor features
+* add button to stop playing
