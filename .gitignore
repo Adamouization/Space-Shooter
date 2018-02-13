@@ -4,3 +4,7 @@ media/bytecode.byc
 steam_api64.dll
 steam_api.dll
 steam_appid.txt
+docs/.TODO.md.un~
+docs/TODO.md~
+..gitignore.un~
+.gitignore~

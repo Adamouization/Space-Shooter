@@ -6,6 +6,8 @@
 
 #### Code Design
 * assess if really need player/lazer/enemy x and y positions (use getpritex or getspritey instead)
+* have global constant variables for all positions/speeds/...
+* have an array of enemies
 
 ## Done:
 
