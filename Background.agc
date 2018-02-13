@@ -4,7 +4,7 @@ Contains code for creating the background:
 	- give them a random starting position on the screen
 */
 Make_stars:
-CreateImageColor(5,255,255,255,255)	// creates a white block as an image
+CreateImageColor(5, 255, 255, 255, 255)	// creates a white block as an image
 for i = 1 to 100	// Create 100 stars
 	CreateSprite(i, 5)
 	SetSpriteSize(i, 2, 2)

@@ -4,7 +4,7 @@ Contains code for detecting collisions between enemies and lazer shots
 Collision:
 /* if collision between laser and enemy is true */
 for i=103 to 105
-	if GetSpriteCollision(102, i) = 1	
+	if GetSpriteCollision(lazer.id, i) = 1	
 		PlaySound(explosion_sound)
 		score = score + 10
 		setSpriteY(i, OFFSCREEN_Y)
@@ -21,7 +21,7 @@ Contains code for detecting collisions between enemies and the player (= player 
 PlayerDeath:
 for i=103 to 105
 	// gameover when collision between enemy ship and player ship
-	if GetSpriteCollision(i,101) = 1
+	if GetSpriteCollision(i, player.id) = 1
 		PlaySound(explosion_sound)
 		gameover = 1
 		setSpriteY(i, OFFSCREEN_Y)

@@ -40,6 +40,7 @@ UseNewDefaultFonts(1)				// since version 2.0.22 we can use nicer default fonts
 
 /* types */
 Type _Player
+	id as integer		// player sprite id
 	x as float			// player x position
 	y as float			// player y position	
 EndType
@@ -51,6 +52,7 @@ Type _Enemy
 	text as string		// string following the enemy
 EndType
 Type _Lazer	
+	id as integer		// lazer sprite id
 	x as float			// lazer x position
 	y as float			// lazer y position
 	fired as integer	// flag

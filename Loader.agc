@@ -12,17 +12,19 @@ LoadImage(3, "enemy_ship.png")
 
 /* Create player ship and place it at bottom of screen */
 player as _Player
-CreateSprite(101, 1)	rem TODO use player id instead (and create it)
-player.x = GetVirtualWidth()/2 - GetSpriteWidth(101)/2 		// set player in middle of screen
-player.y = GetVirtualHeight() - GetSpriteHeight(101)		// set player at bottom of screen
-SetSpritePosition(101, player.x, player.y)	rem TODO use player id instead (and create it)
+player.id = 101
+CreateSprite(player.id, 1)
+player.x = GetVirtualWidth()/2 - GetSpriteWidth(player.id) / 2 	// set player in middle of screen
+player.y = GetVirtualHeight() - GetSpriteHeight(player.id)		// set player at bottom of screen
+SetSpritePosition(player.id, player.x, player.y)
 
 /* Create lazer shot and place it off screen when not shot */
 lazer as _Lazer
-lazer.x = -100	rem TODO use lazer id instead (and create it)
+lazer.id = 102
+lazer.x = -100
 lazer.fired = 0
-CreateSprite(102,2)
-SetSpritePosition(102,-100,-100)
+CreateSprite(lazer.id, 2)
+SetSpritePosition(lazer.id, lazer.x, OFFSCREEN_Y)
 
 /* Create 3 enemy ships and place them at the top of the screen */
 dim enemies[3] as _Enemy
