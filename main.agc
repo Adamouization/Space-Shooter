@@ -1,7 +1,7 @@
 /*
 Project: SpaceShooter 
 Created: 2017-06-29
-Last updated: 2018-02-11
+Last updated: 2018-02-13
 Version: 0.0.0
 Author: Adam Jaamour
 email: adam@jaamour.com
@@ -35,7 +35,13 @@ Type _Player
 	x as float			// player x position
 	y as float			// player y position	
 EndType
-
+Type _Enemy
+	id as integer		// enemy sprite id
+	x as float			// enemy x position
+	y as float			// enemy y position
+	speed as integer	// enemy speed on y-axis	
+	text as string		// string following the enemy
+EndType
 Type _Lazer	
 	x as float			// lazer x position
 	y as float			// lazer y position

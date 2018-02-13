@@ -7,7 +7,6 @@
 #### Code Design
 * assess if really need player/lazer/enemy x and y positions (use getpritex or getspritey instead)
 * have global constant variables for all positions/speeds/...
-* have an array of enemies
 
 ## Done:
 
@@ -20,6 +19,7 @@
 #### Code Design
 * switch sprite numbering (first 100 are stars, rest are enemy/player/lazer)
 * create player, lazer and enemy objects (OO style))
+* have an array of enemies
 
 #### Minor features
 * add button to stop playing

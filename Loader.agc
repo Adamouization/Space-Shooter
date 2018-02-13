@@ -25,16 +25,35 @@ CreateSprite(102,2)
 SetSpritePosition(102,-100,-100)
 
 /* Create 3 enemy ships and place them at the top of the screen */
+dim enemies[3] as _Enemy
 enemy_y = 20
 distance_between_enemies = ((GetVirtualWidth() - (GetImageWidth(3) * 3)) / 3) + 100
-// middle sprite
-CreateSprite(103,3)
-SetSpritePosition(103, GetVirtualWidth()/2 - GetSpriteWidth(103)/2, enemy_y)
-// left sprite
-CreateSprite(104,3)
-SetSpritePosition(104, GetSpriteX(103) - distance_between_enemies, enemy_y)
-// right sprite
-CreateSprite(105,3)
-SetSpritePosition(105, GetSpriteX(103) + distance_between_enemies, enemy_y)
+
+// middle enemy
+enemies[1].id = 103
+CreateSprite(enemies[1].id, 3)
+enemies[1].x = GetVirtualWidth()/2 - GetSpriteWidth(enemies[1].id)/2
+enemies[1].y = enemy_y
+enemies[1].speed = 10
+enemies[1].text = "22"
+SetSpritePosition(enemies[1].id, enemies[1].x, enemies[1].y)
+
+// left enemy
+enemies[2].id = 104
+CreateSprite(enemies[2].id, 3)
+enemies[2].x = GetSpriteX(enemies[1].id) - distance_between_enemies
+enemies[2].y = enemy_y
+enemies[2].speed = 10
+enemies[2].text = "41"
+SetSpritePosition(enemies[2].id, enemies[2].x, enemies[2].y)
+
+// right enemy
+enemies[3].id = 105
+CreateSprite(enemies[3].id, 3)
+enemies[3].x = GetSpriteX(enemies[1].id) + distance_between_enemies
+enemies[3].y = enemy_y
+enemies[3].speed = 10
+enemies[3].text = "22"
+SetSpritePosition(enemies[3].id, enemies[3].x, enemies[3].y)
 
 Return
