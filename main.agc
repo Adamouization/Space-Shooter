@@ -26,10 +26,10 @@ email: adam@jaamour.com
 #constant PLAYER_SPEED = 12
 
 /* window properties */
- SetWindowTitle("Space Shooter")
- SetWindowSize(WINDOW_WIDTH, WINDOW_HEIGHT, 0)
- SetWindowAllowResize(0) 						// disallow user to resize the window
- SetErrorMode(2)								// show all errors
+SetWindowTitle("Space Shooter")
+SetWindowSize(WINDOW_WIDTH, WINDOW_HEIGHT, 0)
+SetWindowAllowResize(0) 						// disallow user to resize the window
+SetErrorMode(2)								// show all errors
 
 /* set display properties */
 SetVirtualResolution(WINDOW_WIDTH, WINDOW_HEIGHT) 		// portrait size, doesn't have to match the window

@@ -57,10 +57,10 @@ FILE_10=PlayerActions.agc;-1
 FILE_NAME_0=0;main.agc;315;0
 FILE_NAME_1=0;Loader.agc;548;1
 FILE_NAME_2=0;Sounds.agc;153;3
-FILE_NAME_3=0;Collision.agc;362;4
+FILE_NAME_3=1;Collision.agc;362;4
 FILE_NAME_4=0;Background.agc;591;5
 FILE_NAME_5=0;Menu.agc;1058;6
-FILE_NAME_6=1;PlayerActions.agc;730;2
+FILE_NAME_6=0;PlayerActions.agc;74;2
 
 [project]
 description=
