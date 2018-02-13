@@ -30,7 +30,7 @@ GoSub ShowMenuText
 /* Wait for player to start the game */
 repeat
 	sync()
-until GetPointerPressed() = 1
+until ( GetPointerPressed() = 1 or GetRawKeyPressed(32) )
 
 /* Reset the enemy ships position to top of screens before restart */
 for j=103 to 105

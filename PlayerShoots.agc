@@ -7,7 +7,7 @@ Contains code for player lazer shooting, including:
 PlayerShoots:
 
 /* Check if player has fired */
-if GetPointerPressed()=1 and lazer.fired=0
+if (GetPointerPressed()=1 or GetRawKeyPressed(32))and lazer.fired=0
 	playsound(lazer_sound)
 	lazer.fired = 1
 	lazer.x = GetSpriteX(101) + GetSpriteWidth(101)/2 - GetSpriteWidth(102)/2	// position laser in middle of ship

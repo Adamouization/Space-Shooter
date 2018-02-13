@@ -83,7 +83,7 @@ do
 	if GetRawKeyPressed(80) // 'P' key pressed
 		gameover = 1
 	endif
-	
+		
     Sync()
 loop
 
