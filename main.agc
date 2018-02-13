@@ -17,17 +17,26 @@ email: adam@jaamour.com
 #include "Background.agc"
 #include "Menu.agc"
 
+/* global variables */
+#constant WINDOW_WIDTH = 768
+#constant WINDOW_HEIGHT = 1024
+#constant OFFSCREEN_Y = -50
+#constant ENEMY_Y_POSITION = 20
+#constant ENEMY_SPEED = 3
+#constant LAZER_SPEED = 12
+#constant PLAYER_SPEED = 12
+
 /* window properties */
  SetWindowTitle("Space Shooter")
- SetWindowSize(768,1024,0)
- SetWindowAllowResize(0) 			// disallow user to resize the window
- SetErrorMode(2)					// show all errors
+ SetWindowSize(WINDOW_WIDTH, WINDOW_HEIGHT, 0)
+ SetWindowAllowResize(0) 						// disallow user to resize the window
+ SetErrorMode(2)								// show all errors
 
 /* set display properties */
-SetVirtualResolution(768,1024) 		// portrait size, doesn't have to match the window
-SetOrientationAllowed(1,1,1,1) 		// allow both portrait and landscape on mobile devices
-SetSyncRate(60,0) 
-SetScissor(0,0,0,0) 				// use the maximum available screen space, no black borders
+SetVirtualResolution(WINDOW_WIDTH, WINDOW_HEIGHT) 		// portrait size, doesn't have to match the window
+SetOrientationAllowed(1, 1, 1, 1) 						// allow both portrait and landscape on mobile devices
+SetSyncRate(60, 0) 
+SetScissor(0, 0, 0, 0) 				// use the maximum available screen space, no black borders
 UseNewDefaultFonts(1)				// since version 2.0.22 we can use nicer default fonts
 
 /* types */
@@ -48,10 +57,9 @@ Type _Lazer
 	fired as integer	// flag
 EndType
 
-/* variables */
+/* module variables */
 score = 0				// current game score
 highscore = 0			// all-time local high score
-
 gameover = 1			// game status boolean
 menu_created = 0		// game menu created once
 

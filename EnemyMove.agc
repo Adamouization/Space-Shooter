@@ -5,6 +5,6 @@ Contains code for enemy movement, including:
 */
 EnemyMove:
 for i=103 to 105
-	SetSpritePosition(i, GetSpriteX(i), GetSpriteY(i) + 3)
+	SetSpritePosition(i, GetSpriteX(i), GetSpriteY(i) + ENEMY_SPEED)
 next i
 Return

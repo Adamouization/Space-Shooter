@@ -4,7 +4,7 @@ Contains code for detecting collisions between enemies and lazer shots
 Collision:
 /* if collision between laser and enemy is true */
 for i=103 to 105
-	if GetSpriteCollision(102,i) = 1	
+	if GetSpriteCollision(102, i) = 1	
 		PlaySound(explosion_sound)
 		score = score + 10
 		setSpriteY(i, -50)
