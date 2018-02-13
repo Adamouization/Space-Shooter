@@ -34,7 +34,7 @@ until ( GetPointerPressed() = 1 or GetRawKeyPressed(32) )
 
 /* Reset the enemy ships position to top of screens before restart */
 for j=103 to 105
-	setSpriteY(j, -50)
+	setSpriteY(j, OFFSCREEN_Y)
 next j
 
 gameover = 0	// game running

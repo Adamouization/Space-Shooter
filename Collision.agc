@@ -7,9 +7,9 @@ for i=103 to 105
 	if GetSpriteCollision(102, i) = 1	
 		PlaySound(explosion_sound)
 		score = score + 10
-		setSpriteY(i, -50)
+		setSpriteY(i, OFFSCREEN_Y)
 		lazer.fired = 0
-		lazer.x = -50 : lazer.y = -50
+		lazer.x = OFFSCREEN_Y : lazer.y = OFFSCREEN_Y
 	endif
 next i
 Return
@@ -24,13 +24,13 @@ for i=103 to 105
 	if GetSpriteCollision(i,101) = 1
 		PlaySound(explosion_sound)
 		gameover = 1
-		setSpriteY(i, -50)
+		setSpriteY(i, OFFSCREEN_Y)
 	endif
 	// game over when enemy ship reaches bottom of screen
 	if GetSpriteY(i) > GetVirtualHeight() - (GetSpriteHeight(i)/4)
 		PlaySound(explosion_sound)
 		gameover = 1
-		setSpriteY(i, -50)
+		setSpriteY(i, OFFSCREEN_Y)
 	endif
 next i
 Return
