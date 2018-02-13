@@ -9,9 +9,8 @@ email: adam@jaamour.com
 
 /* imports */
 #include "Loader.agc"
-#include "PlayerMove.agc"
-#include "PlayerShoots.agc"
-#include "EnemyMove.agc"
+#include "PlayerActions.agc"
+#include "EnemyActions.agc"
 #include "Collision.agc"
 #include "Sounds.agc"
 #include "Background.agc"
