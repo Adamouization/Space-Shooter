@@ -6,9 +6,7 @@
 
 #### Code Design
 * transfer from Tier 1 (AGK BASIC) to Tier 2 (C++)
-* create new types for star objects + add and use id field for player and lazer objectst
 * assess if really need player/lazer/enemy x and y positions (use getpritex or getspritey instead)
-* have global constant variables for all positions/speeds/...
 
 ## Done:
 
@@ -23,6 +21,8 @@
 * create player, lazer and enemy objects (OO style))
 * have an array of enemies
 * re-organize module organization
+* create new types for star objects + add and use id field for player and lazer objects
+* have global constant variables for all positions/speeds/...
 
 #### Minor features
 * add button to stop playing

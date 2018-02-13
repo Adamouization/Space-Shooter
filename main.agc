@@ -19,6 +19,8 @@ email: adam@jaamour.com
 /* global variables */
 #constant WINDOW_WIDTH = 768
 #constant WINDOW_HEIGHT = 1024
+#constant KEY_SPACE = 32
+#constant KEY_LETTER_P = 80
 #constant OFFSCREEN_Y = -50
 #constant ENEMY_Y_POSITION = 20
 #constant ENEMY_SPEED = 3
@@ -65,11 +67,11 @@ gameover = 1			// game status boolean
 menu_created = 0		// game menu created once
 
 /* loading subroutines and setting up game */
-GoSub Make_stars
-GoSub Loader
+GoSub CreateStarsBackground
+GoSub LoadSprites
 MakeText(score)
-GoSub Load_sounds
-//GoSub Load_music
+GoSub LoadSoundEffects
+//GoSub LoadMusic
 
 
 /* main game loop */
@@ -83,8 +85,7 @@ do
 	GoSub PlayerShoots
 	GoSub EnemyMove
 	GoSub PlayerDeath
-	
-	GoSub Move_stars
+	GoSub MoveStars
 
 	SetTextString(1, "SCORE: " + str(score))
 	if score > highscore
@@ -95,7 +96,7 @@ do
 	
 	GoSub Collision
 	
-	if GetRawKeyPressed(80) // 'P' key pressed
+	if GetRawKeyPressed(KEY_LETTER_P) // 'P' key pressed
 		gameover = 1
 	endif
 		

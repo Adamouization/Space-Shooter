@@ -3,14 +3,31 @@ Contains code for creating the game sprites, including:
 	- loading images
 	- assigning them to a sprite
 */
-Loader:
+LoadSprites:
 
-/* Load the images in the app */ 
+GoSub LoadImages
+GoSub CreatePlayer
+GoSub CreateLazer
+GoSub CreateEnemies
+
+Return
+
+/* 
+Load the images in the app 
+*/ 
+LoadImages:
+
 LoadImage(1, "player_ship.png")
 LoadImage(2, "lazer.png")
 LoadImage(3, "enemy_ship.png")
 
-/* Create player ship and place it at bottom of screen */
+Return
+
+/* 
+Create player ship and place it at bottom of screen 
+*/
+CreatePlayer:
+
 player as _Player
 player.id = 101
 CreateSprite(player.id, 1)
@@ -18,7 +35,13 @@ player.x = GetVirtualWidth()/2 - GetSpriteWidth(player.id) / 2 	// set player in
 player.y = GetVirtualHeight() - GetSpriteHeight(player.id)		// set player at bottom of screen
 SetSpritePosition(player.id, player.x, player.y)
 
-/* Create lazer shot and place it off screen when not shot */
+Return
+
+/* 
+Create lazer shot and place it off screen when not shot 
+*/
+CreateLazer:
+
 lazer as _Lazer
 lazer.id = 102
 lazer.x = -100
@@ -26,7 +49,13 @@ lazer.fired = 0
 CreateSprite(lazer.id, 2)
 SetSpritePosition(lazer.id, lazer.x, OFFSCREEN_Y)
 
-/* Create 3 enemy ships and place them at the top of the screen */
+Return
+
+/* 
+Create 3 enemy ships and place them at the top of the screen 
+*/
+CreateEnemies:
+
 dim enemies[3] as _Enemy
 distance_between_enemies = ((GetVirtualWidth() - (GetImageWidth(3) * 3)) / 3) + 100
 
