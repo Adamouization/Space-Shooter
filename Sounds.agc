@@ -1,9 +1,14 @@
+LoadSounds:
+GoSub LoadSoundEffectFiles
+GoSub LoadMusicFiles
+Return
+
 /* 
 Contains code for loading the game sounds the game sprites, including:
 	- loading explosion sounds effects
 	- loading lazer firing sounds effects
 */
-LoadSoundEffects:
+LoadSoundEffectFiles:
 explosion_sound = LoadSound("explosion.wav")
 lazer_sound = LoadSound("laser.wav")
 Return
@@ -12,7 +17,7 @@ Return
 /* 
 Contains code for loading the game music in OGG format.
 */
-LoadMusic:
+LoadMusicFiles:
 music = LoadMusicOGG("space_music.ogg")
 PlayMusicOGG(music)
 Return

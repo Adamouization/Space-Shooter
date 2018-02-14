@@ -71,8 +71,7 @@ menu_created = 0		// game menu created once
 GoSub CreateStarsBackground
 GoSub LoadSprites
 GoSub CreateScore
-GoSub LoadSoundEffects
-//GoSub LoadMusic
+GoSub LoadSounds
 
 
 /* main game loop */
