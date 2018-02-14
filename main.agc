@@ -70,7 +70,7 @@ menu_created = 0		// game menu created once
 /* loading subroutines and setting up game */
 GoSub CreateStarsBackground
 GoSub LoadSprites
-MakeText(score)
+GoSub CreateScore
 GoSub LoadSoundEffects
 //GoSub LoadMusic
 
@@ -104,11 +104,3 @@ do
 		
     Sync()
 loop
-
-
-/* On-screen score */
-Function MakeText(s)
-	CreateText(1, "SCORE: " + str(s))
-	SetTextSize(1, 60)
-	SetTextPosition(1, 0, 0)
-EndFunction

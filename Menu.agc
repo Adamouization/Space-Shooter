@@ -46,6 +46,14 @@ GoSub HideMenuText
 Return
 
 
+/* 
+Contains code for creating the main on-screen score
+*/
+CreateScore:
+CreateText(1, "SCORE: " + str(score))
+SetTextSize(1, 60)
+SetTextPosition(1, 0, 0)
+Return
 
 /* 
 Contains code for hiding the game sprites:
