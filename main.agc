@@ -23,6 +23,7 @@ email: adam@jaamour.com
 #constant KEY_LETTER_P = 80
 #constant OFFSCREEN_Y = -50
 #constant ENEMY_Y_POSITION = 20
+#constant ENEMY_RELATIVE_TEXT_POSITION = -35
 #constant ENEMY_SPEED = 3
 #constant LAZER_SPEED = 12
 #constant PLAYER_SPEED = 12
@@ -31,7 +32,7 @@ email: adam@jaamour.com
 SetWindowTitle("Space Shooter")
 SetWindowSize(WINDOW_WIDTH, WINDOW_HEIGHT, 0)
 SetWindowAllowResize(0) 						// disallow user to resize the window
-SetErrorMode(2)								// show all errors
+SetErrorMode(2)									// show all errors
 
 /* set display properties */
 SetVirtualResolution(WINDOW_WIDTH, WINDOW_HEIGHT) 		// portrait size, doesn't have to match the window
@@ -84,6 +85,7 @@ do
     GoSub PlayerMove
 	GoSub PlayerShoots
 	GoSub EnemyMove
+	GoSub EnemyTextMove
 	GoSub PlayerDeath
 	GoSub MoveStars
 

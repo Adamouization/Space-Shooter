@@ -9,6 +9,7 @@ GoSub LoadImages
 GoSub CreatePlayer
 GoSub CreateLazer
 GoSub CreateEnemies
+GoSub CreateEnemiesText
 
 Return
 
@@ -85,5 +86,18 @@ enemies[3].y = ENEMY_Y_POSITION
 enemies[3].speed = 10
 enemies[3].text = "22"
 SetSpritePosition(enemies[3].id, enemies[3].x, enemies[3].y)
+
+Return
+
+/*
+Create a text to be displayed above each enemy
+*/
+CreateEnemiesText:
+
+for i = 1 to enemies.length
+	CreateText(enemies[i].id, enemies[i].text)
+	SetTextSize(enemies[i].id, 30)
+	SetTextPosition(enemies[i].id, enemies[i].x, enemies[i].y)
+next i
 
 Return

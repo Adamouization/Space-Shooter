@@ -24,6 +24,6 @@
 * create new types for star objects + add and use id field for player and lazer objects
 * have global constant variables for all positions/speeds/...
 
-#### Minor features
+#### Minor features 
 * add button to stop playing
 * can shoot with space bar

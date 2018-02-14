@@ -55,9 +55,12 @@ Contains code for hiding the game sprites:
 	- hides stars
 */
 HideGameSprites:
-for i=1 to 105
-	SetSpriteVisible(i,0)
+for i = 1 to 105
+	SetSpriteVisible(i, 0)
 next i
+for j = 103 to 105
+	SetTextVisible(j, 0)
+next j
 Return
 
 /* 
@@ -68,23 +71,26 @@ Contains code for showing the game sprites:
 	- shows stars
 */
 ShowGameSprites:
-for i=1 to 105
-	SetSpriteVisible(i,1)
+for i = 1 to 105
+	SetSpriteVisible(i, 1)
 next i
+for j = 103 to 105
+	SetTextVisible(j, 1)
+next j
 Return
 
 /*
 Contains code for hiding the main menu texts
 */
 HideMenuText:
-SetTextVisible(3,0)
-SetTextVisible(5,0)
+SetTextVisible(3, 0)
+SetTextVisible(5, 0)
 Return
 
 /* 
 Contains code for shozing the main menu texts
 */
 ShowMenuText:
-SetTextVisible(3,1)
-SetTextVisible(5,1)
+SetTextVisible(3, 1)
+SetTextVisible(5, 1)
 Return
