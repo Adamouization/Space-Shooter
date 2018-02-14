@@ -1,3 +1,6 @@
+/*
+Calls subroutines for loading sounds (SFX and music)
+*/
 LoadSounds:
 GoSub LoadSoundEffectFiles
 GoSub LoadMusicFiles

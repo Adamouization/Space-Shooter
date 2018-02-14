@@ -4,8 +4,8 @@ Contains code for enemy movement, including:
 	- reversing enemy's movement direction when touching the edge of the screen
 */
 EnemyMove:
-for i = 103 to 105
-	SetSpritePosition(i, GetSpriteX(i), GetSpriteY(i) + ENEMY_SPEED)
+for i = 1 to enemies.length
+	SetSpritePosition(enemies[i].id, GetSpriteX(enemies[i].id), GetSpriteY(enemies[i].id) + ENEMY_SPEED)
 next i
 Return
 

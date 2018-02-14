@@ -9,7 +9,7 @@ MainMenu:
 
 if menu_created = 0
 	CreateText(3,"Space Shooter")
-	SetTextSize(3,100)
+	SetTextSize(3, 100)
 	SetTextPosition(3, (768 - GetTextTotalWidth(3))/2 , 180)
 
 	CreateText(4, "HIGHSCORE: " + str(highscore))
@@ -33,7 +33,7 @@ repeat
 until ( GetPointerPressed() = 1 or GetRawKeyPressed(KEY_SPACE) )
 
 /* Reset the enemy ships position to top of screens before restart */
-for j=103 to 105
+for j = 103 to 105
 	setSpriteY(j, OFFSCREEN_Y)
 next j
 
