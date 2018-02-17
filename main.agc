@@ -60,6 +60,11 @@ Type _Lazer
 	y as float			// lazer y position
 	fired as integer	// flag
 EndType
+Type _Star
+	id as integer		// star sprite id
+	width as integer	// star width
+	height as integer	// star height
+EndType
 
 /* module variables */
 score = 0				// current game score

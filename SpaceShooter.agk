@@ -51,14 +51,14 @@ FILE_6=PlayerActions.agc;-1
 FILE_7=EnemyActions.agc;-1
 
 [files]
-FILE_NAME_0=0;main.agc;2077;0
-FILE_NAME_1=0;Loader.agc;187;1
-FILE_NAME_2=0;Sounds.agc;171;2
-FILE_NAME_3=0;Collision.agc;519;3
-FILE_NAME_4=0;Background.agc;594;4
-FILE_NAME_5=0;Menu.agc;346;5
-FILE_NAME_6=0;PlayerActions.agc;87;6
-FILE_NAME_7=1;EnemyActions.agc;271;7
+FILE_NAME_0=0;main.agc;1580;0
+FILE_NAME_1=0;Loader.agc;2141;1
+FILE_NAME_2=0;Sounds.agc;55;5
+FILE_NAME_3=0;Collision.agc;493;4
+FILE_NAME_4=1;Background.agc;259;6
+FILE_NAME_5=0;Menu.agc;397;7
+FILE_NAME_6=0;PlayerActions.agc;87;2
+FILE_NAME_7=0;EnemyActions.agc;316;3
 
 [project]
 description=

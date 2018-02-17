@@ -33,9 +33,9 @@ repeat
 until ( GetPointerPressed() = 1 or GetRawKeyPressed(KEY_SPACE) )
 
 /* Reset the enemy ships position to top of screens before restart */
-for j = 103 to 105
-	setSpriteY(j, OFFSCREEN_Y)
-next j
+for i = 1 to enemies.length
+	setSpriteY(enemies[i].id, OFFSCREEN_Y)
+next i
 
 gameover = 0	// game running
 
@@ -63,12 +63,17 @@ Contains code for hiding the game sprites:
 	- hides stars
 */
 HideGameSprites:
-for i = 1 to 105
-	SetSpriteVisible(i, 0)
+SetSpriteVisible(player.id, 0)
+SetSpriteVisible(lazer.id, 0)
+for i = 1 to enemies.length
+	SetSpriteVisible(enemies[i].id, 0)
 next i
-for j = 103 to 105
-	SetTextVisible(j, 0)
-next j
+for i = 1 to stars.length
+	SetSpriteVisible(stars[i].id, 0)
+next i
+for i = 103 to 105
+	SetTextVisible(i, 0)
+next i
 Return
 
 /* 
@@ -79,12 +84,17 @@ Contains code for showing the game sprites:
 	- shows stars
 */
 ShowGameSprites:
-for i = 1 to 105
-	SetSpriteVisible(i, 1)
+SetSpriteVisible(player.id, 1)
+SetSpriteVisible(lazer.id, 1)
+for i = 1 to enemies.length
+	SetSpriteVisible(enemies[i].id, 1)
 next i
-for j = 103 to 105
-	SetTextVisible(j, 1)
-next j
+for i = 1 to stars.length
+	SetSpriteVisible(stars[i].id, 1)
+next i
+for i = 103 to 105
+	SetTextVisible(i, 1)
+next i
 Return
 
 /*
@@ -96,7 +106,7 @@ SetTextVisible(5, 0)
 Return
 
 /* 
-Contains code for shozing the main menu texts
+Contains code for showing the main menu texts
 */
 ShowMenuText:
 SetTextVisible(3, 1)

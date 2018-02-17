@@ -22,5 +22,5 @@ Contains code for loading the game music in OGG format.
 */
 LoadMusicFiles:
 music = LoadMusicOGG("space_music.ogg")
-PlayMusicOGG(music)
+//PlayMusicOGG(music)
 Return
