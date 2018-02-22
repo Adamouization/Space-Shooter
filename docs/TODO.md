@@ -2,9 +2,11 @@
 
 #### Important Features
 * Display an equation at the top with one of the answer being attached to the ship
+* Create a type for the equation, with the following fields: left_side, right_side, operand, array of answers and end of equation ( = ? )
 * save highscore to text file
 
 #### Code Design
+* have constants for the different text ids to identify them more easily
 * transfer from Tier 1 (AGK BASIC) to Tier 2 (C++)
 * assess if really need player/lazer/enemy x and y positions (use getpritex or getspritey instead)
 
