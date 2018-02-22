@@ -32,8 +32,8 @@ CreatePlayer:
 player as _Player
 player.id = 101
 CreateSprite(player.id, 1)
-player.x = GetVirtualWidth()/2 - GetSpriteWidth(player.id) / 2 	// set player in middle of screen
-player.y = GetVirtualHeight() - GetSpriteHeight(player.id)		// set player at bottom of screen
+player.x = GetVirtualWidth()/2 - GetSpriteWidth(player.id) / 2 							// set player in middle of screen
+player.y = GetVirtualHeight() - GetSpriteHeight(player.id) - GetTextTotalHeight(2)		// set player at bottom of screen
 SetSpritePosition(player.id, player.x, player.y)
 
 Return

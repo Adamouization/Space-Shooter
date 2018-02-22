@@ -11,6 +11,7 @@ email: adam@jaamour.com
 #include "Loader.agc"
 #include "PlayerActions.agc"
 #include "EnemyActions.agc"
+#include "EquationActions.agc"
 #include "Collision.agc"
 #include "Sounds.agc"
 #include "Background.agc"
@@ -74,6 +75,7 @@ menu_created = 0		// game menu created once
 
 /* loading subroutines and setting up game */
 GoSub CreateStarsBackground
+GoSub CreateEquationText
 GoSub LoadSprites
 GoSub CreateScore
 GoSub LoadSounds
@@ -102,7 +104,7 @@ do
 	
 	GoSub Collision
 	
-	if GetRawKeyPressed(KEY_LETTER_P) // 'P' key pressed
+	if GetRawKeyPressed(KEY_LETTER_P)
 		gameover = 1
 	endif
 		

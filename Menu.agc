@@ -74,6 +74,7 @@ next i
 for i = 103 to 105
 	SetTextVisible(i, 0)
 next i
+SetTextVisible(2, 0)
 Return
 
 /* 
@@ -95,6 +96,7 @@ next i
 for i = 103 to 105
 	SetTextVisible(i, 1)
 next i
+SetTextVisible(2, 1)
 Return
 
 /*
