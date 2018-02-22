@@ -38,7 +38,7 @@ splash_2436_path=
 [html5_settings]
 commands_used=0
 dynamic_memory=0
-output_path=
+output_path=D:\\Libraries\\Documents\\App Game Kit\\SpaceShooter\\HTML5
 
 [projectfiles]
 FILE_0=main.agc;-1
@@ -51,13 +51,13 @@ FILE_6=PlayerActions.agc;-1
 FILE_7=EnemyActions.agc;-1
 
 [files]
-FILE_NAME_0=0;main.agc;1580;0
+FILE_NAME_0=1;main.agc;2378;0
 FILE_NAME_1=0;Loader.agc;2141;1
-FILE_NAME_2=0;Sounds.agc;55;5
+FILE_NAME_2=0;Sounds.agc;412;5
 FILE_NAME_3=0;Collision.agc;493;4
-FILE_NAME_4=1;Background.agc;259;6
-FILE_NAME_5=0;Menu.agc;397;7
-FILE_NAME_6=0;PlayerActions.agc;87;2
+FILE_NAME_4=0;Background.agc;831;6
+FILE_NAME_5=0;Menu.agc;1499;7
+FILE_NAME_6=0;PlayerActions.agc;282;2
 FILE_NAME_7=0;EnemyActions.agc;316;3
 
 [project]

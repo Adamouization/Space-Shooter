@@ -1,7 +1,7 @@
 # Space Shooter Todo
 
 #### Important Features
-* assign a hard coded equation to each enemy, with the equation displayed under/above the ship
+* Display an equation at the top with one of the answer being attached to the ship
 * save highscore to text file
 
 #### Code Design
@@ -15,6 +15,7 @@
 * add new enemies (3 total) that move downwards only, with collision logic applying to all of them
 * when game restarts, make all enemies start from top (reset y positions)
 * center the 3 enemies
+* assign a hard coded equation to each enemy, with the equation displayed under/above the ship
 
 #### Code Design
 * switch sprite numbering (first 100 are stars, rest are enemy/player/lazer)
